@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  format:
+    name: Check code formatting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18.17.1"
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm i
+      - name: Run Formatter
+        run: npm run format:check
