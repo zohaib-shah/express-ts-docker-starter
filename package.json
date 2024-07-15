@@ -9,7 +9,7 @@
     "build": "npx tsc",
     "format:fix": "npx prettier . --write",
     "format:check": "npx prettier . --check",
-    "release": "dotenv release-it --ci"
+    "release": "dotenv release-it -- --ci"
   },
   "keywords": [],
   "author": "",
