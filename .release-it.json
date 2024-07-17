@@ -12,5 +12,8 @@
     },
     "npm": {
         "publish": false
+    },
+    "hooks": {
+      "before:init": "npm run format:check"
     }
 }
