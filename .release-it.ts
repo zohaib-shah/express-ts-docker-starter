@@ -18,4 +18,22 @@ export default {
   hooks: {
     "before:init": "npm run format:fix",
   },
+  plugins: {
+    "@release-it/conventional-changelog": {
+      preset: {
+        name: "conventionalcommits",
+        types: [
+          {
+            type: "feat",
+            section: "Features",
+          },
+          {
+            type: "fix",
+            section: "Bug Fixes",
+          },
+        ],
+      },
+      infile: "CHANGELOG.md",
+    },
+  },
 } as Config;
