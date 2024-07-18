@@ -1,3 +1,7 @@
+
+
+## 4.0.0 (2024-07-18)
+
 ## [4.0.0](https://github.com/zohaib-shah/express-ts-docker-starter/compare/3.0.2...4.0.0) (2024-07-17)
 
 ### ⚠ BREAKING CHANGES
